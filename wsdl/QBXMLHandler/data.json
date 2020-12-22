@@ -1,0 +1,25 @@
+{
+    "VendorAdd": {
+       "Name": "Acme",
+       "IsActive": "1",
+       "CompanyName": "Acme Food Products",
+       "Salutation": "Mr",
+       "FirstName": "Mike",
+       "LastName": "Acme",
+       "VendorAddress": {
+          "Addr1": "4600 N. 1st St.",
+          "Addr2": "Suite B",
+          "City": "San Francisco",
+          "State": "CA",
+          "PostalCode": "94044",
+          "Country": "USA"
+       },
+       "Phone": "650-987-9654",
+       "AltPhone": "650-214-6549",
+       "Fax": "650-214-6549",
+       "Email": "Beka@bestfoods.com",
+       "Contact": "Mr Leon",
+       "NameOnCheck": "Acme Food Products",
+       "AccountNumber": "1239-854"
+    }
+ }

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<QBWCXML>
+   <AppName>Roof Top Test Web Connector-02</AppName>
+   <AppID></AppID>
+   <AppURL>http://localhost:3000/wsdl</AppURL>
+   <AppDescription>Roof Top Test Web Connector Web Connector</AppDescription>
+   <AppSupport>http://localhost:3000/wsdl?wsdl</AppSupport>
+   <UserName>crestinfosystems</UserName>
+   <OwnerID>{90A44FB7-33D9-4815-AC85-AC86A7E7D222}</OwnerID>
+   <FileID>{90A44FB7-33D9-4815-AC85-AC86A7E7D222}</FileID>
+   <QBType>QBFS</QBType>
+   <Scheduler>
+      <RunEveryNSeconds>60</RunEveryNSeconds>
+   </Scheduler>
+   <IsReadOnly>false</IsReadOnly>
+</QBWCXML>

@@ -140,6 +140,7 @@ webService.QBWebConnectorSvc.QBWebConnectorSvcSoap.clientVersion = function (arg
  * Login Function
  */
 const login = (username, password) => {
+	console.log("🚀 ~ file: web-service.js ~ line 143 ~ login ~ username, password", username, password)
 	return new Promise(async (resolve, reject) => {
 		try {
 			const api = "/api/auth/login/";
@@ -221,10 +222,17 @@ webService.QBWebConnectorSvc.QBWebConnectorSvcSoap.authenticate = function (args
 
 		})
 		.catch(err => {
-			console.log(err);
+        	console.log("🚀 ~ file: web-service.js ~ line 225 ~ err", err)
 		})
 
+		// qbXMLHandler.fetchRequests(function (err, requests) {
+        //     console.log("🚀 ~ file: web-service.js ~ line 229 ~ err", err)
+        //     console.log("🚀 ~ file: web-service.js ~ line 229 ~ requests", requests)
+		// })
 
+		// callback({
+		// 	authenticateResult: { 'string': [authReturn[0], companyFile] }
+		// });
 };
 
 /**
