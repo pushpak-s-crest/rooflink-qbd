@@ -191,6 +191,7 @@ webService.QBWebConnectorSvc.QBWebConnectorSvcSoap.authenticate = function (args
 				// Check if qbXMLHandler responds to method.
 				if ((typeof qbXMLHandler.fetchRequests === "function")) {
 					qbXMLHandler.fetchRequests(function (err, requests) {
+                        console.log("🚀 ~ file: web-service.js ~ line 194 ~ err, requests", err, requests)
 						requestQueue = requests;
 						if (err || requestQueue.length === 0) {
 							authReturn[1] = 'NONE';

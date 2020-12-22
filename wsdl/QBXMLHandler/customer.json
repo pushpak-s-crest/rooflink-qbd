@@ -1,0 +1,23 @@
+{
+    "CustomerAdd": {
+       "Name": "Joe Customer",
+       "IsActive": "1",
+       "CompanyName": "Joes Garage",
+       "Salutation": "Mr",
+       "FirstName": "Joe",
+       "LastName": "Customer",
+       "BillAddress": {
+          "Addr1": "123 Main St.",
+          "City": "Mountain View",
+          "State": "CA",
+          "PostalCode": "94566"
+       },
+       "Phone": "650-944-1111",
+       "AltPhone": "650-944-2111",
+       "Email": "joe@joegargage.com",
+       "TermsRef": {
+          "FullName": "Net 30"
+       },
+       "CreditLimit": "2000.00"
+    }
+ }

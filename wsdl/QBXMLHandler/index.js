@@ -8,6 +8,10 @@ const path = require('path');
 let rawData = fs.readFileSync(path.resolve(__dirname, 'data.json'));
 let student = JSON.parse(rawData);
 
+
+let rawDataCustomer = fs.readFileSync(path.resolve(__dirname, 'customer.json'));
+let customer = JSON.parse(rawDataCustomer);
+
 // Public
 module.exports = {
 
@@ -48,19 +52,29 @@ module.exports = {
 
 function buildRequests(callback) {
 	var requests = new Array();
-	requests.push(student)
 	var xml = convert(
 		'QBXML',
 		{
 			QBXMLMsgsRq: {
 				_attr: { onError: 'stopOnError' },
-				VendorAddRq : requests
+				VendorAddRq : student
 			},
 		}
 	);
-	console.log("🚀 ~ file: index.js ~ line 54 ~ buildRequests ~ student", student)
-    console.log("🚀 ~ file: index.js ~ line 56 ~ buildRequests ~ xml", xml)
+	var xmlCus = convert(
+		'QBXML',
+		{
+			QBXMLMsgsRq: {
+				_attr: { onError: 'stopOnError' },
+				CustomerAddRq : customer
+			},
+		}
+	);
+    console.log("🚀 ~ file: index.js ~ line 73 ~ buildRequests ~ xmlCus", xmlCus)
+    console.log("🚀 ~ file: index.js ~ line 66 ~ buildRequests ~ xml", xml)
+	
 	requests.push(xml);
+	requests.push(xmlCus);
 
 	return callback(null, requests);
 }
